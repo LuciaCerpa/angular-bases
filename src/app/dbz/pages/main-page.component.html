@@ -1,0 +1,27 @@
+<h2>DBZ Personajes</h2>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <h4>Listado</h4>
+
+    <!-- <app-list-dbz-component [characterList]="characters" (characterToRemove)="onRemoveCharacter($event)"></app-list-dbz-component>
+
+  </div>
+
+  <div class="col">
+    <app-add-dbz-character (onNewCharacter)="onNewCharacter($event)"></app-add-dbz-character>
+  </div> -->
+
+  <!-- <app-list-dbz-component [characterList]="dbzService.characters" (characterToRemove)="dbzService.onRemoveCharacter($event)"></app-list-dbz-component> -->
+
+
+  <!-- <app-list-dbz-component [characterList]="dbzService.characters" (characterToRemove)="dbzService.deleteCharacterById($event)"></app-list-dbz-component> -->
+
+  <app-list-dbz-component [characterList]="characters" (characterToRemove)="onDeleteCharacter($event)"></app-list-dbz-component>
+  </div>
+
+  <div class="col">
+    <app-add-dbz-character (onNewCharacter)="onNewCharacter($event)"></app-add-dbz-character>
+  </div>
+</div>
